@@ -51,6 +51,7 @@ Dashboard
 
 ## 📂 Project Structure
 
+```
 recycling-hr-system/
 │
 ├── backend/
@@ -64,6 +65,7 @@ recycling-hr-system/
 │
 ├── ai-prompts.md
 └── README.md
+```
 
 ---
 
