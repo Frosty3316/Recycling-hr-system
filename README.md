@@ -138,3 +138,4 @@ https://drive.google.com/file/d/1-zS_tWDlsBgsueJGKifcM9GSzMo1NUSI/view?usp=shari
 - Rankings can be recomputed from the dashboard.
 - DB triggers keep total_score in sync when evaluations change.
 - Indexes improve leaderboard performance.
+- Designed with deployment in mind (env vars, CORS-ready)
