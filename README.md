@@ -4,7 +4,7 @@ A minimal full-stack system to rank candidates for a Recycling Production Line M
 MySQL, mock AI evaluation, and a React + Vite dashboard.
 
 This project demonstrates:
-- Database design with indexes and triggers
+- Database design with **indexes and triggers**
 - Random candidate generation (Faker.js)
 - AI-style evaluation prompts (mocked scoring)
 - A functional dashboard with leaderboard, heatmap, and candidate profiles
@@ -13,22 +13,22 @@ This project demonstrates:
 
 ## ✨ Features
 
-Database
+**Database**
 - ✅ MySQL schema with:
   - candidates
   - evaluations (crisis, sustainability, motivation)
   - rankings (auto-updated using trigger)
   - ⚡ Indexes for faster leaderboard queries
-  - 🔁 Triggers to auto-sync total_score on insert & update
+  - 🔁 Triggers to auto-sync `total_score` on insert & update
 
-Data
+**Data**
 - 🎲 Faker.js seed script to generate 40 realistic candidates
 
-AI (Mocked)
+**AI (Mocked)**
 - 🧠 AI evaluation prompts (mock AI scoring)
 - 📄 Prompts documented in ai-prompts.md
 
-Dashboard
+**Dashboard**
 - 🏆 Leaderboard (Top 10 candidates)
 - 🔥 Skill heatmap for scores
 - 👤 Candidate cards with detailed profiles
@@ -69,32 +69,32 @@ recycling-hr-system/
 
 ---
 
-🚀 Setup Instructions
+## 🚀 Setup Instructions
 
-1️⃣ Clone the repo
+### 1️⃣ Clone the repo
 
-```
+```bash
 git clone https://github.com/Frosty3316/Recycling-hr-system.git
 cd Recycling-hr-system
 ```
 
-2️⃣ Setup Database (MySQL)
+### 2️⃣ Setup Database (MySQL)
 
 Create database:
-```
+```bash
 CREATE DATABASE recycling_hr;
 ```
 
 Import schema and seed:
-```
+```bash
 mysql -u root -p recycling_hr < database/schema.sql
 mysql -u root -p recycling_hr < database/seed.sql
 ```
-The schema includes indexes and triggers to auto-sync ranking scores.
+> The schema includes indexes and triggers to auto-sync ranking scores.
 
-3️⃣ Start Backend
+### 3️⃣ Start Backend
 
-```
+```bash
 cd backend
 npm install
 npm run dev
@@ -102,16 +102,16 @@ npm run dev
 
 Create a .env file in /backend:
 
-```
+```bash
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=recycling_hr
 ```
 
-4️⃣ Start Frontend
+### 4️⃣ Start Frontend
 
-```
+```bash
 cd frontend/recycling-dashboard
 npm install
 npm run dev
@@ -121,12 +121,13 @@ Open:
 
 ---
 
-📸 Demo
-https://drive.google.com/file/d/1-zS_tWDlsBgsueJGKifcM9GSzMo1NUSI/view?usp=sharing
+## 📸 Demo
+
+▶️ https://drive.google.com/file/d/1-zS_tWDlsBgsueJGKifcM9GSzMo1NUSI/view?usp=sharing
 
 ---
 
-🧠 AI Prompts
+## 🧠 AI Prompts
 
 - Crisis management
 - Sustainability knowledge
@@ -135,7 +136,7 @@ https://drive.google.com/file/d/1-zS_tWDlsBgsueJGKifcM9GSzMo1NUSI/view?usp=shari
 
 ---
 
-📝 Notes
+## 📝 Notes
 
 - Rankings can be recomputed from the dashboard.
 - DB triggers keep total_score in sync when evaluations change.
