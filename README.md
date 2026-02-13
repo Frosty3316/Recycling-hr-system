@@ -39,3 +39,41 @@ This project demonstrates:
 
 ## 📂 Project Structure
 
+recycling-hr-system/
+│
+├── backend/
+├── database/
+│   ├── schema.sql
+│   ├── seed.js
+│   └── seed.sql
+│
+├── frontend/
+│   └── recycling-dashboard/
+│
+├── ai-prompts.md
+└── README.md
+
+---
+
+🚀 Setup Instructions
+
+1️⃣ Clone the repo
+
+```
+git clone <YOUR_GITHUB_REPO_URL>
+cd recycling-hr-system
+```
+
+2️⃣ Setup Database (MySQL)
+
+Create database:
+```
+CREATE DATABASE recycling_hr;
+```
+
+Import schema and seed:
+```
+mysql -u root -p recycling_hr < database/schema.sql
+mysql -u root -p recycling_hr < database/seed.sql
+```
+The schema includes indexes and triggers to auto-sync ranking scores.
